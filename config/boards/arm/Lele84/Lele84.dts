@@ -18,21 +18,6 @@
 		zmk,underglow = &led_strip;
 	};
 
-	vbatt {
-		compatible = "zmk,battery-voltage-divider";
-		label = "BATTERY";
-		io-channels = <&adc 1>;
-		output-ohms = <1000000>;
-		full-ohms = <(1000000 + 1000000)>;
-	};
-
-	
-
-	ext-power {
-		compatible = "zmk,ext-power-generic";
-		label = "EXT_POWER";
-		control-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
-	};
 
 	
 };
@@ -57,9 +42,9 @@
 	// Underglow data: P0.31 
   compatible = "nordic,nrf-spim";
   status = "okay";
-  mosi-pin = <31>;
+  mosi-pin = <22>;
   // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-  sck-pin = <28>;
+  sck-pin = <59>;
   miso-pin = <30>;
 
   led_strip: ws2812@0 {
@@ -71,7 +56,7 @@
     spi-max-frequency = <4000000>;
 
     /* WS2812 */
-    chain-length = <16>; /* number of LEDs */
+    chain-length = <12>; /* number of LEDs */
     spi-one-frame = <0x70>;
     spi-zero-frame = <0x40>;
   };
