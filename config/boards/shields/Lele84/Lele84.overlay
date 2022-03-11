@@ -17,6 +17,7 @@
 			RC(8,0)  RC(9,0) RC(8,1) RC(9,1) RC(8,2) RC(9,2) RC(8,3) RC(9,3) RC(8,4) RC(9,4) RC(8,5) RC(9,5) RC(8,6)  RC(9,6) RC(8,7)  RC(9,7) 		
 		>;
 	};
+    
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
