@@ -43,4 +43,9 @@ endchoice
 endif # LVGL
 
 config ZMK_WIDGET_WPM_STATUS
+	default n
+config ZMK_WIDGET_BONGO_CAT
 	default y
+
+
+
