@@ -44,3 +44,5 @@ endif # LVGL
 
 config ZMK_WIDGET_WPM_STATUS
 	default y
+config ZMK_WIDGET_LUNA
+	default y
