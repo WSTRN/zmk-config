@@ -19,7 +19,6 @@
 			>;
         };
 
-        
         coding_layer {
 
             bindings = <
