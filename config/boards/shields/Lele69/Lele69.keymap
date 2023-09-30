@@ -10,7 +10,6 @@
 #define SET 2
 
 / {
-
     keymap {
         compatible = "zmk,keymap";
 
