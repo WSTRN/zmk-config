@@ -53,7 +53,7 @@
 		label = "LEFT_ENCODER";
 		a-gpios = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 	    b-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-	    resolution = <4>;
+	    resolution = <1>;
 	};
 	sensors {
 	    compatible = "zmk,keymap-sensors";
